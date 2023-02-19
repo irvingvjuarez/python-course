@@ -1,6 +1,7 @@
 import csv
 
 def readFile(path):
+
   with open(path) as csvfile:
     reader = csv.reader(csvfile, delimiter=",")
     headers = next(reader)

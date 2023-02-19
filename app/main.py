@@ -3,7 +3,7 @@ from modify import modify
 import charts
 import retrieve
 
-filename = "./app/data.csv"
+filename = "./data.csv"
 
 content = read.readFile(filename)
 
@@ -17,6 +17,7 @@ charts.generatePieChart(countryNames, countryPop)
 
 
 # Chart one country population over time
+
 country = ""
 
 while not country or not list( filter(lambda ctry: ctry["Country/Territory"] == country.capitalize(), content) ):
